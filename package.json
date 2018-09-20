@@ -1,0 +1,22 @@
+{
+  "name": "number-guessing-game",
+  "version": "1.0.0",
+  "description": "In this assignment I created a number guessing game using JavaScript. My goal for this project was to apply JavaScript fundamentals and concepts that I have learned throughout the week. More precisely,  I applied the use of a while loop to control the flow of the game so that the functions I created would be invoked at the correct time. Along with this, I learned to parse values, mainly Number() so that the value produced was the correct primitive value I needed for my functions. Finally, I used conditional statements and logical operators to control the outcome of user inputs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomyreyes/Number-Guessing-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomyreyes/Number-Guessing-Game/issues"
+  },
+  "homepage": "https://github.com/tomyreyes/Number-Guessing-Game#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}

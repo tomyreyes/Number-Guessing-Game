@@ -16,9 +16,3 @@ Along with this functionality I tried to implement ES6 syntax, such as string in
 
 * JavaScript
 
-
-
-### Coming soon :
-
-I plan to connect the JavaScript I used to create this game to a UI using jQuery. 
-I will also implement a button that will allow users to restart the game. 
