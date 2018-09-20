@@ -1,10 +1,8 @@
 const readlineSync = require('readline-sync');
 
-
 function generateRandomNumber(max) {
 
     return Math.floor(Math.random() * max + 1)
-
 }
 
 function Guess(value) {
@@ -17,6 +15,7 @@ function getGuessFromUser(max, min) {
 
     let promptedGuess = readlineSync.question(`Pick a number from ${min} to ${max} `)
     while (isNaN(promptedGuess) || promptedGuess === '') {
+
         promptedGuess = readlineSync.question('Make sure you are guessing a number! ')
     }
     return Number(promptedGuess)
@@ -26,6 +25,7 @@ function getMaxFromUser() {
 
     let max = readlineSync.question('Please set the max range I can choose from. Enter 0 if you don\'t want to play. ')
     while (isNaN(max)) {
+
         max = readlineSync.question('Please use numbers. ')
     }
     return Number(max)
@@ -70,7 +70,6 @@ function getDifficulty() {
             return Number(difficultySetting)
         }
     }
-
 }
 
 function restartGame() {
@@ -89,7 +88,6 @@ function restartGame() {
             console.log('Have a great day')
         }
     }
-
 }
 
 function startGame() {
@@ -127,33 +125,27 @@ function startGame() {
             } else {
 
                 guessCounter.push(guess)
-
                 if (isGuessCorrect(winningNumber, guess.value)) {
 
                     endGame = true
                     console.log('You won')
                     restartGame()
-
                 } else if (guessCounter.length >= setDifficulty) {
 
                     endGame = true
                     console.log('You have lost. Nice try!')
                     restartGame()
-
                 } else if (guess.value > winningNumber) {
 
                     console.log('Your guess is too high')
                     max = guess.value - 1
                 }
-
                 else {
 
                     console.log('Your guess is too low')
                     min = guess.value + 1
                 }
-
             }
-
         }
     }
 }
